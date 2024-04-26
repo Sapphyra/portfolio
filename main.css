@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	/*background-color: black;*/
+}
+
+.header {
+	text-align: center;
+	padding:  30px;
+	background-color: black;
+}
+
+h1 {
+	color: lightgrey;
+	font-family: "Cormorant SC", helvetica, serif;
+	font-weight: 500;
+	font-size:  3vw;
+	font-style: normal;
+	margin-bottom: 0px;
+}
+
+h2 {
+	color: lightgrey;
+	font-family: "Cormorant Garamond", helvetica, serif;
+	font-weight: 300;
+	font-size:  1.5vw;
+	font-style: normal;
+}
+
+.image-grid {
+	--gap: 0px;
+	--num-cols: 3;
+	--row-height: 400px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	margin: 0;
+	background-color: black;
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 300px;
+	}
+
+	h1 {
+		font-size: 4.5vw;
+	}
+
+	h2 {
+		font-size: 3vw;
+	}
+}
