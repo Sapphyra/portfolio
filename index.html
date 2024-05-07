@@ -3,31 +3,67 @@
 <head>
 	<title>portoflio</title>
 	<link rel="stylesheet" href="main.css">
+	
 
 	<!-- get google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- get google icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 
-	<!-- add modal images*/ -->
 	<div class="header">
 		<h1>Art of Ludovico Tellatin</h1>
 		<h2>fantasy illustrator | game designer</h2>
 	</div>
 
-	<div class="image-grid">
-		<img class="image-grid-row-2" src="images/Elanai_lowres.jpg">
-		<img src="images/Eye of Ra.jpg">
-		<img src="images/Akhenaton_light.jpg">
-		<img class="image-grid-col-2" src="images/death_lowres.jpg">
-		<img src="images/Horus Grell_lowres.jpg">
-		<img src="images/moonstone dragon.jpg">
-		<img src="images/terza_comm_lowres.jpg">
-		<img src="images/Gregor-lowres.jpg">
+	<div id="myModal" class="modal">
+	    <!-- The Close Button -->
+		<span class="close">&times;</span>
+
+		<!-- Modal Content (The Image) -->
+		<img class="modal-content" id="img01">
+
+		<!-- Modal Caption (Image Text) -->
+		<div id="caption"></div>
 	</div>
+
+	<div class="image-grid">
+		<img id="portImages" class="image-grid-row-2" src="images/Elanai_lowres.jpg" data-haslink="">
+		<img id="portImages" src="images/Eye of Ra.jpg" data-haslink="https://www.drivethrurpg.com/en/product/470687/Records-of-Eashes-Tamiri">
+		<img id="portImages" src="images/Akhenaton_light.jpg" data-haslink="https://www.drivethrurpg.com/en/product/470687/Records-of-Eashes-Tamiri">
+		<img id="portImages" class="image-grid-col-2" src="images/death_lowres.jpg" data-haslink="https://www.kickstarter.com/projects/sapphyra/armtge-the-fantasy-cyberpunk-rpg">
+	</div>
+
+	<div class="resume">
+		I'm a 28 years old fantasy artist. <br class="mobile-break">I create illustrations for ttrpgs and games.
+		<br>
+		I'm the author of <a href="https://www.kickstarter.com/projects/sapphyra/records-of-eashes-tamiri">Records of Eashes: Tamiri</a>, an egyptian inspired adventure for D&D 5th edition
+		<br>
+		<br>
+		<h2>Where you can find me</h2>
+
+		<a href="https://www.instagram.com/sapphhyra/">instagram</a>
+		<a href="https://twitter.com/Sapphhyra">twitter</a>
+	</div>
+
+	<div class="image-grid">
+		<img id="portImages" src="images/Horus Grell_lowres.jpg">
+		<img id="portImages" src="images/moonstone dragon.jpg">
+		<img id="portImages" src="images/terza_comm_lowres.jpg">
+		<img id="portImages" src="images/Gregor-lowres.jpg">
+		<img id="portImages" src="images/Monastery.jpg">
+		<img id="portImages" src="images/campaneraLowRes.jpg">
+	</div>
+	
+	
+
+  	<script src="script.js"></script>
 </body>
 </html>
 
